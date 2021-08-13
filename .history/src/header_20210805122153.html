@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Pritchard</title>
+    <link rel="stylesheet" href="/src/styles.css ">
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+        <!-- Centered text -->
+        <div class="text-center">
+            <div class="object" data-value="0.85" id="signature"> </div>
+        <h2 class="object" data-value="3"> Welcome <br> <span>Author & Data Scientist</span></h2>
+        </div>
+       
+        <!--Left Column Section  -->
+        <div class="col">
+            <span id="l2" data-value="6" class="object"></span>
+            <span id="l3" data-value="8" class="object"></span>
+            <span id="l4" data-value="-8" class="object"></span>
+            <span id="l5" data-value="10" class="object"></span>
+            <span id="l6" data-value="-10" class="object"></span>
+            <!-- Main-Profile image bottom left -->
+            <div id="l1" data-value="-1" class="object"></div>
+        </div>
+
+
+        <!-- Center column section -->
+        <div class="col">
+            <span id="l7" data-value="6" class="object"></span>
+            <span id="l8" data-value="6" class="object"></span>
+            <span id="l9" data-value="1.5" class="object"></span>
+            <span id="l10" data-value="6" class="object"></span>
+            <span id="l11" data-value="6" class="object"></span>
+        </div>
+
+
+        <!-- Right colum Section -->
+        <div class="col">
+            <span id="l12" data-value="6" class="object"></span>
+            <span id="l13" data-value="6" class="object"></span>
+            <span id="l14" data-value="6" class="object"></span>
+            <span id="l15" data-value="6" class="object"></span>
+            <span id="l16" data-value="6" class="object"></span>
+          
+        </div>
+
+
+
+
+
+         <!-- Main-Profile image bottom left -->
+         <!-- <img src="/Header/sig.png" data-value="3" alt=""> -->
+        <!-- Parallax elements -->
+        <!-- <img src="/Header/atom-p-s.png" class="object" data-value="-2" alt="">
+        <img src="/Header/atom-w-s.png" class="object" data-value="6" alt="">
+        <img src="/Header/atom-p.png" class="object" data-value="4" alt="">
+        <img src="/Header/bible-2.png" class="object" data-value="-6" alt="">
+        <img src="/Header/bible.png"  class="object" data-value="-4" alt="">
+        <img src="/Header/guitar.png" class="object" data-value="5" alt="">
+        <img src="/Header/books.png" class="object" data-value="9" alt="">
+        <img src="/Header/bulb.png" class="object" data-value="12" alt="">
+        <img src="/Header/flask.png" class="object" data-value="-5" alt="">
+        <img src="/Header/mobile.png" class="object" data-value="8" alt="">
+        <img src="/Header/dl.png" class="object" data-value="15" alt="">
+        <img src="/Header/robot.png" class="object" data-value="22" alt=""> -->
+
+    
+<!-- TODO
+- List all images from CSS
+- Fix placement of images according to mockup
+- add block section to add video container
+- modularize this and  upload it to hosting
+- Use grid CSS
+-->
+       </div>
+</div>
+
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 50;
+                var y = (e.clientY * moving_value) / 50;
+
+                move.style.transform = "translateX(" + x +"px) translateY("+ y +"px)";
+            });
+        }
+    </script>
+
+
+
+
+<div class="container">
+
+
+
+</div>
+
+</body>
+</html>

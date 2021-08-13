@@ -1,0 +1,800 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* HTML body  */
+  /* TODO
+  - Assign background to special container property for header section only
+  */
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/head-bg.jpg")
+      no-repeat;
+    background-size:contain;
+    background-color: black;
+    background-position: 0px 0px,
+    right 3em bottom 2em;
+    background-repeat: no-repeat;
+  touch-action: auto;
+  touch-action: none;
+  touch-action: pan-x;
+  touch-action: pan-left;
+  touch-action: pan-right;
+  touch-action: pan-y;
+  touch-action: pan-up;
+  touch-action: pan-down;
+  touch-action: pinch-zoom;
+  touch-action: manipulation;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%!important;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 1920px!important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  .g-row {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    text-align: center;
+
+  }
+
+  .bg2{
+      margin-top:-50px;
+  }
+  .cnt-card {
+      left: 45%;
+      text-align: center!important;
+      top: -15px;
+      max-width: fit-content;
+      padding: 8px;
+  }
+  
+  .dark-bg{
+    background-color: #121212!important;
+  }
+  /* Here is the grid styles */
+  .row-85 {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+  }
+.Hm01{
+    margin-left: 30%!important;
+    margin-right: 30%!important;
+}
+
+
+/* Custom purple button color */
+  .btn-C1 {
+    color: #fff;
+    background-color: #8307a8;
+    border-color: #b214e2;
+  }
+  .btn-C1:hover{
+    color: #fff;
+    background-color: #c615fc;
+    border-color: #ececec;
+  }
+  /* Code bracket colors */
+.Mkb{
+    color: #851ddb;
+}
+  .Mkc{
+    color: #a88038;
+  }
+
+  .Mkd{
+    color: #74b087;
+  }
+
+/* typewriter CSS*/
+.typewriter{
+    display: flex;
+    justify-content: center;
+    border-color: #74b087;
+    border:1px;
+    border-style: solid;
+    color: #1169b6;
+}
+
+.typewriter span {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 16px;
+    color: rgb(135, 7, 167);
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
+
+
+
+  /* End of button styles */
+  
+  /* HERE IS WHERE THE MAGIC HAPPENS */
+  /* Header container */
+  .container1{
+    /* position: relative; */
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    touch-action: auto;
+
+  }
+  /* Container padding and margin */
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Images within the container */
+  .container1 img {
+    position: absolute;
+    width: 6.5em;
+    height: 110%;
+    display: flex;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    touch-action: auto;
+  touch-action: none;
+  touch-action: pan-x;
+  touch-action: pan-left;
+  touch-action: pan-right;
+  touch-action: pan-y;
+  touch-action: pan-up;
+  touch-action: pan-down;
+  touch-action: pinch-zoom;
+  touch-action: manipulation;
+  }
+  
+  /* H2 title content center*/
+  .container1 h2 {
+    z-index: 1;
+    top: 0;
+    margin-top: -70px;
+    color: #fff;
+    font-size: 90px;
+    text-transform: capitalize;
+    font-weight: 900;
+    letter-spacing: 12px;
+    line-height: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Span text within the H2 */
+  .container1 h2 span {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 10px;
+  }
+  
+/*-----------------------------------------------------------------------------------------*/
+
+
+  /* Patreon icon */
+  #patreon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/patreon.png") no-repeat;
+    background-size: contain;
+  }
+
+
+/* Discord Icon */
+#discord-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    background: url("/Header/discord.png")
+      no-repeat;
+    background-size: contain;
+  }
+
+/* Slack Icon */
+#slack-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    background: url("/Header/slack.png")
+      no-repeat;
+    background-size: contain;
+  }
+/*-----------------------------------------------------------------------------------------*/
+  /* Signature image sprite */
+  #signature {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/sig.png")
+      no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    padding: 15px;
+    left: 0;
+    top: 50px;
+  }
+
+/* Sign up */
+#signup {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+
+/* Sign up */
+#signup {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+
+
+/* choose your path */
+#path {
+    width: auto;
+    height: 200px;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/pick-path.png")
+      no-repeat;
+      background-size: contain;
+  }
+
+
+/* choose your path 0 */
+#P1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+  }
+
+/* choose your path 1 */
+#P2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+  }
+/* choose your path 2 */
+#P3 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+  }
+/* choose your path 3 */
+#P4 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+  }
+
+
+
+/* Latest video title */
+#latest {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Latest video backgroung*/
+#latest-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+/* Shaun Pritchard banner */
+  #sp-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Discord title */
+#discord {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+/* Discord background */
+  #discord-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Slack title */
+#slack {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+/* Slack background homepage */
+  #slack-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Social media title*/
+#social {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+/* Instagram */
+  #Sc1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Twitter */
+#Sc2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+  #Facebook {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+
+/* Tic Tok */
+#Sc4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/Sign-up-text.png")
+      no-repeat;
+    background-size: contain;
+    transform: rotate(-8deg);
+    margin-bottom: 10px;
+  }
+/*-----------------------------------------------------------------------------------------*/
+  /* Parallax image sprites */
+  
+  /* Pic of shaun lower left corner */
+  #l1 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0px;
+    top: 55vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/ShaunP-1.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* LEFT COLUMN */
+  
+  /* White small atom element*/
+  #l-1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 2.5%;
+    top: 3em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/atom-w-s.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Books atom element*/
+  #l0 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 3%;
+    top: 16em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/books.png")
+      no-repeat;
+    background-size: contain;
+  }
+  /* White big atom element*/
+  #l2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 3%;
+    top: 5em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/atom-w.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /*Purple atom small element */
+  #l3 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 2px;
+    top: 25vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/atom-p-s.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Flask element*/
+  #l4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 12%;
+    top: 23em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/flask.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Bulb element*/
+  #l6 {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 18%;
+    top: 25em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/bulb.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* CENTER COLUMN */
+  
+  /* Bible element*/
+  #l7 {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 27%;
+    top: 35em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/bible.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Deep Learning element*/
+  #l8 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 32%;
+    top: 42em !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/dl.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Rocket element*/
+  #l9 {
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    left: 35%;
+    top: 78vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/rocket-s.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Guitar element*/
+  #l10 {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    left: 80%;
+    top: 85vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/guitar.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Robot element*/
+  #l11 {
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    left: 87%;
+    top: 7vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/robot.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Purple Atom element*/
+  #l12 {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    left: 87%;
+    top: 70vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/atom-p.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* White Atom element*/
+  #l13 {
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    left: 92%;
+    top: 85vh !important;
+    object-fit: contain;
+    display: block;
+    background: url("https://shaunp.live/wp-content/uploads/2021/08/atom-w-s.png")
+      no-repeat;
+    background-size: contain;
+  }
+  
+  /* Media query to adapt to smaller screen */
+  @media (max-width: 800px) {
+    
+  /* H2 container */
+    .container1 h2 {
+      z-index: 1;
+      position: relative;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 19px;
+      line-height: 35px;
+      margin-bottom: -20px!important;
+    }
+  /* H2 container span  */
+    .container1 h2 span {
+      z-index: 1;
+      position: relative;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 19px;
+      line-height: 35px;
+    }
+    
+   /* Signiture image SVG   */
+    #signature {
+      height: 50vh;
+      top:-5em;
+    }
+    
+      /* Picture of me */
+      #l1 {
+      top: 80vh !important;
+      width: 90%;
+      height: 30vh;
+    }
+    
+      /* Books */
+      #l0 {
+      top: 16em!important;
+      left: 0;
+    }
+      /* Flask   */
+      #l4 {
+      left: 10%;
+      top: 23em!important;
+    }
+    
+      /* Bible element*/
+      #l7 {
+      left: 55%;
+      top: 38em!important;
+    }
+    
+     /* White atom */
+      #l2 {
+      top: 55vh !important;
+      left:0;
+    }
+     /* Light bulb */
+      #l6 {
+      top: 62vh !important;
+      left:25vh;
+      width 200px!important;
+    }
+   /* Deep Learning */
+      #l8 {
+      left: 42%;
+      top: 45em!important;
+    }
+  /* Rocket */
+      #l9 {
+      left: 51%;
+      top: 97vh!important;
+    }
+    .Hm01{
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+        z-index: 9;
+    }
+  }
+  
