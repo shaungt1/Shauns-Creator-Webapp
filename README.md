@@ -1,6 +1,6 @@
 # Shaun Pritchard Creator Web Application
 This web application is for my creator web application located here:
-#### [Shaup.live](https://shunp.live).  
+#### [Shaunp.live](https://shaunp.live).  
 
 ![Shaun P Live Web App](/assets/banner.png)
 
